@@ -41,9 +41,9 @@ When you use your own trained model, path to the model is used instead as the ar
 *Modified by Hubert Leterme*
 
 ```
-python run_waveletcnn.py --phase test --gpu -1 --initmodel models/ImageNet_waveletCNN_level4.caffemodel --target_path path/to/dataset [--target_label n0XXXXXX]
+python run_waveletcnn.py --phase test --gpu -1 --initmodel models/ImageNet_waveletCNN_level4.caffemodel --target_path path/to/dataset [--target_label n0XXXXXXX]
 ```
-The path to the ImageNet dataset should be something like `/home/username/dataset/val/`. The directory contains one folder for each class, named `n0XXXXXX`. Each of these folders contain images belonging to the given class.
+The path to the ImageNet dataset should be something like `/home/username/dataset/val/`. The directory contains one folder for each class, named `n0XXXXXXX`. Each of these folders contain images belonging to the given class.
 
 If no target label is given, then the model will be tested on the entire dataset.
 
