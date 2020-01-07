@@ -128,4 +128,4 @@ elif args.phase == "test":
 
     if args.target_image is None:
         acc_rate = n_accurate_total / n_imgs_total
-        print("==> Global accuracy rate = {:.2f}".format(acc_rate))
+        print("==> Global accuracy rate = {:.1e}".format(acc_rate))
