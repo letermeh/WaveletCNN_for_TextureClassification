@@ -35,7 +35,18 @@ python run_waveletcnn.py --phase test --gpu 0 --initmodel models/ImageNet_wavele
 
 Using the pre-trained model with ImageNet 2012 dataset, please download it following the instructions in `models` directory.
 
-When you use your own trained model, path to the model is used instead as the argument of **--initmodel**. Additionally, you need to rewrite the path to the file, which contains label names, in `run_waveletcnn.py` (l.68).
+When you use your own trained model, path to the model is used instead as the argument of **--initmodel**. Additionally, you need to rewrite the path to the file, which contains label names, in `run_waveletcnn.py` (l.71).
+
+### Test on a dataset
+*Modified by Hubert Leterme*
+
+```
+python run_waveletcnn.py --phase test --gpu -1 --initmodel models/ImageNet_waveletCNN_level4.caffemodel --target_path path/to/dataset [--target_label n0XXXXXX]
+```
+The path to the ImageNet dataset should be something like `/home/username/dataset/val/`. The directory contains one folder for each class, named `n0XXXXXX`. Each of these folders contain images belonging to the given class.
+
+If no target label is given, then the model will be tested on the entire dataset.
+
 
 ## Citation
 

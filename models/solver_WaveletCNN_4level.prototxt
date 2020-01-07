@@ -10,4 +10,4 @@ display: 100
 max_iter: 20000
 snapshot: 5000
 snapshot_prefix: "models/caffe_waveletCNN_4level_train"
-solver_mode: GPU
+solver_mode: CPU
